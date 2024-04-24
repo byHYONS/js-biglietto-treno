@@ -13,7 +13,7 @@ const numeroUtente = Number(prompt('Scegli un numero da 1 a 9'));
 console.log('numero da 1 a 9: ' + numeroUtente);
 
 // definisce var con valore casuale tra 1 / 9 numeroComputer
-const numeroComputer = Math.floor(Math.random() * 10) + 1;
+const numeroComputer = Math.floor(Math.random() * 9) + 1;
 console.log('il computer ha scelto il numero: ' + numeroComputer);
 
 // definisce var con la somma di numeroUtente + numeroComputer = totaleNumero
@@ -32,10 +32,10 @@ if (!isNaN(numeroUtente) && numeroUtente >= 1 && numeroUtente <= 9 && (sceltaUte
         docHtml.innerHTML = `Hai sclto: ${sceltaUtentePariDispari}, il tuo numero scelto è: ${numeroUtente}, il computer ha scelto il numero: ${numeroComputer}, il risultato è: ${(risultatoPariDispari === 0 ? 'pari' : 'dispari')}... HAI VINTO!!!`;
     } else if ( risultatoPariDispari !== 0 && sceltaUtentePariDispari === 'dispari'){
         console.log('ha vinto l\'utente');
-        docHtml.innerHTML = `Hai sclto: ${sceltaUtentePariDispari}, il tuo numero scelto è: ${numeroUtente}, il computer ha scelto il numero: ${numeroComputer}, il risultato è: ${ (risultatoPariDispari === 0 ? 'pari' : 'dispari')}... HAI VINTO!!!`;  
+        docHtml.innerHTML = `Hai sclto: ${sceltaUtentePariDispari}, il tuo numero scelto è: ${numeroUtente}, il computer ha scelto il numero: ${numeroComputer}, il risultato è: ${(risultatoPariDispari === 0 ? 'pari' : 'dispari')}... HAI VINTO!!!`;  
     } else {
         console.log('ha vinto il computer');
-        docHtml.innerHTML = `Hai sclto: ${sceltaUtentePariDispari}, il tuo numero scelto è: ${numeroUtente}, il computer ha scelto il numero: ${numeroComputer}, il risultato è: ${ (risultatoPariDispari === 0 ? 'pari' : 'dispari')}... HAI PERSO!!!`;
+        docHtml.innerHTML = `Hai sclto: ${sceltaUtentePariDispari}, il tuo numero scelto è: ${numeroUtente}, il computer ha scelto il numero: ${numeroComputer}, il risultato è: ${(risultatoPariDispari === 0 ? 'pari' : 'dispari')}... HAI PERSO!!!`;
     }
     // comunicare all'utente che ha scritto in modo sbagliato gli input
 } else {
