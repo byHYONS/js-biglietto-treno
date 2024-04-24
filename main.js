@@ -37,7 +37,7 @@ if (!isNaN(eta) && !isNaN(kilometri)) {
         console.log('minorenne');
         console.log(`Il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`)
         // stampare il risultato su html
-        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`
+        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`;
         
     
     } else if (eta >= 65){
@@ -45,14 +45,14 @@ if (!isNaN(eta) && !isNaN(kilometri)) {
         console.log('over65');
         console.log(`Il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`)
         // stampare il risultato su html
-        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`
+        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`;
 
     } else {
         prezzoFinale
         console.log('NO minorenne, NO over65');
         console.log(`Il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`)
         // stampare il risultato su html
-        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`
+        docHtml.innerHTML = `Km da percorrere: ${kilometri}, la tua età è: ${eta}, il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`;
     };
 
 } else {
