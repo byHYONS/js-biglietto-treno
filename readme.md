@@ -20,9 +20,9 @@ i. Questo richiederà un minimo di ricerca.
 - dichiarare una variabile per l'età .eta del passeggero tramite prompt, trasformando il valore in numero;
 
 - Trovare il prezzo totale del viaggio:
-    1. dichiaro var .prezzoKm;
-    2. dichiaro var .prezzoMinorenni;
-    3. dichiaro var .prezzoOver65;
+    1. dichiaro var .prezzoKm = 0.21;
+    2. dichiaro var .prezzoMinorenni = -20%;
+    3. dichiaro var .prezzoOver65 = -40%;
 
     IF .eta ≤ 18 
         .prezzoTotale = (.kilometri * .prezzoKilometr) - .prezzoMinorenni;
