@@ -9,7 +9,7 @@
 
 <!-- ESECUZIONE DELL'ESERCIZIO -->
 
-// prima cosa: dati di input
+# ESECUZIONE:
 
 - definisco var con valore prompt che chiede pari sceltaUtentePariDispari
 - definisce var con valore prompt 1 / 9 numeroUtente
