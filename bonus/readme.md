@@ -1,31 +1,38 @@
 
 # ESERCIZIO: PARI O DISPARI
-# cartella/repo: js-biglietto-treno / BONUS
+
+ >[!NOTE]
+ >
+ > cartella/repo: js-biglietto-treno / BONUS
 
 
-1. chiedere all'utente se vuole pari o dispari e un numero intero compreso tra 1 e 9.
-2. Generare un numero casuale compreso tra 1 e 9, che sarà la giocata del computer.
+1. chiedere all'utente se vuole pari o dispari e un numero intero compreso tra `1 e 9.
+2. Generare un numero casuale compreso tra `1 e 9`, che sarà la giocata del computer.
 3. Stabilire e comunicare chi ha vinto secondo le regole di pari o dispari.
 
 <!-- ESECUZIONE DELL'ESERCIZIO -->
 
-# ESECUZIONE:
+## ESECUZIONE:
 
 - definisco var con valore prompt che chiede pari sceltaUtentePariDispari
-- definisce var con valore prompt 1 / 9 numeroUtente
-- definisce var con valore casuale tra 1 / 9 numeroComputer
+- definisce var con valore prompt `1 / 9` numeroUtente
+- definisce var con valore casuale tra `1 / 9` numeroComputer
 
-- definisce var con la somma di numeroUtente + numeroComputer = totaleNumero
+- definisce var con la somma di `numeroUtente + numeroComputer = totaleNumero`
 
-- definisco var che ci dice se il valore totaleNumero è pari o dispari risultatoPariDispari
+- definisco var che ci dice se il valore `totaleNumero` è pari o dispari `risultatoPariDispari`
 
-- IF (risultatoPariDispari === 0 && sceltaUtentePariDispari === 'pari'){
-    vince utente
+- Predisporre condizioni in base ai possibili scenari di gioco:
+
+```
+IF (risultatoPariDispari === 0 && sceltaUtentePariDispari === 'pari')
+    console.log('vince utente')
 
 ELSE IF (risultatoPariDispari !== 0 && sceltaUtentePariDispari === 'dispari')
-    vince utente
+    console.log('vince utente')
 
-ALTRO
-    vince computer
+ELSE
+    console.log('vince computer')
+```
 
-- stampare risultato su html.
+- stampare risultato su html con `nomeElemento.innerHTML`.
