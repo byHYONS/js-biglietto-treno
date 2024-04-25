@@ -26,13 +26,15 @@
     1. dichiaro var prezzoKm = `0.21`;
     2. dichiaro var prezzoMinorenni = `-20%`;
     3. dichiaro var prezzoOver65 = `-40%`;
+
+- Predisprre condizioni in base ai possibili sconti da appliccare in base all'età:
 ```
     IF .eta ≤ 18 
-        prezzoTotale = (.kilometri * .prezzoKilometr) - .prezzoMinorenni;
-    IF ELSE .eta ≥ 65
-        prezzoTotale = (.kilometri * .prezzoKilometr) - .prezzoOver65;
+        prezzoTotale = (kilometri * prezzoKilometr) - prezzoMinorenni;
+    IF ELSE eta ≥ 65
+        prezzoTotale = (kilometri * prezzoKilometr) - prezzoOver65;
     ELSE
-       prezzoTotale = (.kilometri * .prezzoKilometr) 
+       prezzoTotale = (kilometri * prezzoKilometr) 
 ```
 
 - trasformare `prezzoTotale` con un numero che restituisca solo due cifre dopo la virgola utilizzando il metodo:
