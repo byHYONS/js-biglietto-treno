@@ -9,20 +9,20 @@ const kilometri = Number(prompt('Inserisci i Chilometri Totali'));
 console.log('km totali: '+ kilometri);
 
 // dichiarare una variabile per l'età .eta del passeggero tramite prompt, trasformando il valore in numero;
-const eta = Number(prompt('Inserisci i tuoi anni'));
+const eta = parseInt(prompt('Inserisci i tuoi anni'));
 console.log('età: ' + eta);
 
 //     1. dichiaro var .prezzoKm = 0,21;
 const prezzoKm = 0.21;
 //     2. dichiaro var .prezzoMinorenni = -20%;
-const prezzoMinorenni = 0.20;
+const prezzoMinorenni = 20;
 //     3. dichiaro var .prezzoOver65 = -40%;
-const prezzoOver65 = 0.40;
+const prezzoOver65 = 40;
 
 // prezzo totale + sconti
 const prezzoTotale = kilometri * prezzoKm;
-const scontoMinori = prezzoTotale * prezzoMinorenni;
-const scontoOver65 = prezzoTotale * prezzoOver65;
+const scontoMinori = prezzoTotale - ((prezzoTotale / 100) * prezzoMinorenni);
+const scontoOver65 = prezzoTotale - ((prezzoTotale / 100) * prezzoOver65);
 
 //prezzo finale
 let prezzoFinale = prezzoTotale;
@@ -33,7 +33,7 @@ if (!isNaN(eta) && !isNaN(kilometri)) {
     console.log('I valori inseriti sono corretti');
     // condizioni in base all'età
     if (eta <= 18){
-        prezzoFinale = prezzoTotale - scontoMinori;
+        prezzoFinale = scontoMinori;
         console.log('minorenne');
         console.log(`Il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`)
         // stampare il risultato su html
@@ -41,7 +41,7 @@ if (!isNaN(eta) && !isNaN(kilometri)) {
         
     
     } else if (eta >= 65){
-        prezzoFinale = prezzoTotale - scontoOver65;
+        prezzoFinale = scontoOver65;
         console.log('over65');
         console.log(`Il prezzo del tuo biglietto è di € ${prezzoFinale.toFixed(2)}`)
         // stampare il risultato su html
